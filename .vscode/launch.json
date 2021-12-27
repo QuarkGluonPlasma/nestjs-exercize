@@ -14,7 +14,21 @@
             "skipFiles": [
                 "<node_internals>/**"
             ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "参数校验",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "start"
+            ],
+            "port": 9229,
+            "cwd": "${workspaceFolder}/params-validation",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
         }
-    
     ]
 }
